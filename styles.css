@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%)
+}
+.main{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.section-grid {
+   
+    display:grid;
+    grid-template-columns: repeat(3, minmax(auto, 250px));
+    justify-content: center;
+    row-gap: 0;
+    column-gap: 0;   
+    outline: none;
+    
+}
+
+.section-grid-item img{
+    width: 40px;
+}
+.section-grid-item{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+.section-grid-item.seaden{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+}
+.section-grid-item.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+.section-grid-item.lux{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+
+}
+
+.header{
+    margin: 0;    
+    font-weight: 700;
+    color: hsl(0, 0%, 95%); 
+    font-family: 'Big Shoulders Display';
+}
+.para{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    font-size: .8rem;
+    margin: 0;
+   
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.btn-seaden{
+    color: hsl(31, 77%, 72%);
+    font-weight: 500;    
+}
+.btn-suv{
+    color: hsl(184, 100%, 32%);
+    font-weight: 500; 
+}
+.btn-lux{
+    color: hsl(179, 100%, 32%);
+    font-weight: 500; 
+}
+.btn-learn-more{
+    border-radius: 10000px;
+    text-align: center;
+    font-family: 'Lexend Deca';
+    font-size: .8rem;
+    margin: 0;
+    padding: 0;
+    border: none;   
+    width:140px;
+    height:30px
+}
+
+@media (max-width: 700px){
+
+
+ body{
+    margin: 0;
+    height: fit-content;
+    background-color: hsl(0, 0%, 95%)
+}
+.main{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+   
+ .section-grid {
+        row-gap: 0px; 
+        grid-template-columns:  minmax(auto, 450px);
+        padding: 30px; 
+        
+ }
+
+ .section-grid-item.seaden{
+    border-radius: unset;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    border-bottom:none;
+}
+.section-grid-item.lux{
+    border-radius:  unset;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-top: none;
+
+}
+
+}
